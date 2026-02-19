@@ -1,0 +1,212 @@
+.activityCard {
+  background-color: var(--color-white);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.activityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-lavender);
+}
+
+.activityHeader h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-dark-gray-1);
+  font-family: var(--font-heading);
+  margin: 0;
+}
+
+.activityViewAll {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-royal-blue);
+  font-family: var(--font-body);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.activityViewAll:hover {
+  color: var(--color-royal-blue-1);
+}
+
+/* Desktop Table */
+.activityTableWrapper {
+  display: block;
+  overflow-x: auto;
+}
+
+.activityTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activityTable thead {
+  background-color: var(--color-ghost-white);
+}
+
+.activityTable th {
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-slate-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: var(--font-body);
+}
+
+.activityTable th.textRight {
+  text-align: right;
+}
+
+.activityTable tbody tr {
+  border-bottom: 1px solid var(--color-lavender);
+  transition: background-color 0.2s;
+}
+
+.activityTable tbody tr:hover {
+  background-color: var(--color-ghost-white);
+}
+
+.activityTable td {
+  padding: 16px 24px;
+  font-size: 14px;
+  color: var(--color-dark-slate-gray);
+  font-family: var(--font-body);
+}
+
+.activityTable td.textRight {
+  text-align: right;
+}
+
+.activityIndex {
+  font-weight: 500;
+  color: var(--color-slate-gray);
+}
+
+.activityName {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.activityIcon {
+  color: var(--color-royal-blue);
+  flex-shrink: 0;
+}
+
+.activityIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.activityName span {
+  font-weight: 500;
+  color: var(--color-dark-gray-1);
+  text-transform: capitalize;
+}
+
+.activityDetails {
+  color: var(--color-slate-gray);
+}
+
+.activityStatus {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-body);
+}
+
+.activityStatus.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.activityStatus.approved,
+.activityStatus.success {
+  background-color: var(--color-white-smoke);
+  color: var(--color-forest-green);
+}
+
+.activityStatus.rejected,
+.activityStatus.failed {
+  background-color: var(--color-linen);
+  color: var(--color-crimson);
+}
+
+.activityNoStatus {
+  color: var(--color-dark-gray);
+}
+
+.activityTime {
+  color: var(--color-slate-gray);
+  font-size: 13px;
+}
+
+/* Mobile Cards */
+.activityMobile {
+  display: none;
+}
+
+.activityMobileCard {
+  padding: 16px;
+  border-bottom: 1px solid var(--color-lavender);
+  transition: background-color 0.2s;
+}
+
+.activityMobileCard:hover {
+  background-color: var(--color-ghost-white);
+}
+
+.activityMobileCard:last-child {
+  border-bottom: none;
+}
+
+.activityMobileHeader {
+  margin-bottom: 12px;
+}
+
+.activityMobileName {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.activityMobileName h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-dark-gray-1);
+  margin: 0 0 4px;
+  text-transform: capitalize;
+  font-family: var(--font-body);
+}
+
+.activityMobileName p {
+  font-size: 12px;
+  color: var(--color-slate-gray);
+  margin: 0;
+}
+
+.activityMobileFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activityTableWrapper {
+    display: none;
+  }
+
+  .activityMobile {
+    display: block;
+  }
+}
